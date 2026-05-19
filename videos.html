@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Video Gallery - DarxiKawaiiOfficial</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional custom styles for standalone videos page */
+    .videos-page-container {
+      padding: 10rem 8% 6rem;
+      min-height: 80vh;
+    }
+    .videos-header {
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .videos-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .videos-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+    .back-btn-container {
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Ambience -->
+  <div class="ambient-bg"></div>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="custom-cursor-glow" id="cursor-glow"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="index.html" class="logo" id="header-logo">
+      <img src="Images/DarxiKawaii_Logo__2_-removebg-preview.png" alt="DarxiCon Logo" class="logo-img">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="gallery.html">Avatar Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="header-socials">
+      <a href="https://www.tiktok.com/@darxikawaiiofficial" target="_blank" class="social-link tiktok-link" title="TikTok"
+        aria-label="TikTok">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.99-1.72-.08-.07-.15-.15-.22-.23v6.5c0 5.46-4.5 9.48-10.02 9.46-5.07-.02-9.2-4.1-9.22-9.17-.03-5.26 4.31-9.61 9.57-9.56.02 1.42-.01 2.84 0 4.26-3.08-.18-5.7 2.16-5.88 5.23-.2 3.4 2.5 6.44 5.92 6.51 3.38.07 6.16-2.58 6.16-5.96V0c-.82.01-1.63.01-2.45.02h-.03z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@DarxiConOfficial" target="_blank" class="social-link youtube-link" title="YouTube"
+        aria-label="YouTube">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.498 6.163c-.272-.98-1.04-1.748-2.02-2.02C19.716 3.65 12 3.65 12 3.65s-7.717 0-9.478.493c-.98.272-1.748 1.04-2.02 2.02C0 7.925 0 12 0 12s0 4.075.493 5.837c.272.98 1.04 1.748 2.02 2.02 1.76.493 9.478.493 9.478.493s7.716 0 9.478-.493c.98-.272 1.748-1.04 2.02-2.02C24 16.075 24 12 24 12s0-4.075-.493-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Standalone Videos Content -->
+  <main class="videos-page-container">
+    <div class="videos-header">
+      <h1>Video <span class="accent-text-glow">Gallery</span></h1>
+      <p>The full archive of gothic streetwear fashion edits, VRoid creation walkthroughs, and alternative styling showcases fetched directly from YouTube.</p>
+      <div class="back-btn-container">
+        <a href="index.html#videos" class="btn btn-secondary">
+          <svg style="width: 18px; height: 18px; fill: currentColor; transform: rotate(180deg);" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+
+    <!-- Video Grid (populated dynamically, displaying up to 15 fetched videos) -->
+    <div class="video-grid" id="youtube-video-grid" data-limit="15">
+      <!-- Skeleton Loaders -->
+      <div class="video-skeleton"></div>
+      <div class="video-skeleton"></div>
+      <div class="video-skeleton"></div>
+      <div class="video-skeleton"></div>
+      <div class="video-skeleton"></div>
+      <div class="video-skeleton"></div>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class="footer-logo-container">
+      <a href="index.html" class="logo">
+        <img src="Images/DarxiKawaii_Logo__2_-removebg-preview.png" alt="DarxiCon Logo" class="logo-img">
+      </a>
+      <div class="footer-text">&copy; DarxiKawaiiOfficial. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

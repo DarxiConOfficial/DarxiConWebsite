@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Avatar Gallery - DarxiKawaiiOfficial</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional custom styles for standalone gallery page */
+    .gallery-page-container {
+      padding: 10rem 8% 6rem;
+      min-height: 80vh;
+    }
+    .gallery-header {
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .gallery-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .gallery-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+    .back-btn-container {
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Ambience -->
+  <div class="ambient-bg"></div>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="custom-cursor-glow" id="cursor-glow"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="index.html" class="logo" id="header-logo">
+      <img src="Images/DarxiKawaii_Logo__2_-removebg-preview.png" alt="DarxiCon Logo" class="logo-img">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="gallery.html" class="active">Avatar Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="header-socials">
+      <a href="https://www.tiktok.com/@darxikawaiiofficial" target="_blank" class="social-link tiktok-link" title="TikTok"
+        aria-label="TikTok">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.99-1.72-.08-.07-.15-.15-.22-.23v6.5c0 5.46-4.5 9.48-10.02 9.46-5.07-.02-9.2-4.1-9.22-9.17-.03-5.26 4.31-9.61 9.57-9.56.02 1.42-.01 2.84 0 4.26-3.08-.18-5.7 2.16-5.88 5.23-.2 3.4 2.5 6.44 5.92 6.51 3.38.07 6.16-2.58 6.16-5.96V0c-.82.01-1.63.01-2.45.02h-.03z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@DarxiConOfficial" target="_blank" class="social-link youtube-link" title="YouTube"
+        aria-label="YouTube">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.498 6.163c-.272-.98-1.04-1.748-2.02-2.02C19.716 3.65 12 3.65 12 3.65s-7.717 0-9.478.493c-.98.272-1.748 1.04-2.02 2.02C0 7.925 0 12 0 12s0 4.075.493 5.837c.272.98 1.04 1.748 2.02 2.02 1.76.493 9.478.493 9.478.493s7.716 0 9.478-.493c.98-.272 1.748-1.04 2.02-2.02C24 16.075 24 12 24 12s0-4.075-.493-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Standalone Gallery Content -->
+  <main class="gallery-page-container">
+    <div class="gallery-header">
+      <h1>Avatar <span class="accent-text-glow">Gallery</span></h1>
+      <p>A full collection of customized VRoid Studio model renders, close-up details, gothic streetwear designs, and alternative styling combinations.</p>
+      <div class="back-btn-container">
+        <a href="index.html#gallery" class="btn btn-secondary">
+          <svg style="width: 18px; height: 18px; fill: currentColor; transform: rotate(180deg);" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+
+    <!-- Full Grid (Add new gallery-item divs here to expand the gallery) -->
+    <div class="gallery-grid">
+      
+      <!-- 1 -->
+      <div class="gallery-item" data-src="assets/darxie_model.png"
+        data-caption="Gothic and Pink VRoid Avatars - Heart pose showcase.">
+        <img src="assets/darxie_model.png" alt="Gothic and Pink VRoid Avatars">
+        <div class="gallery-overlay">
+          <span class="gallery-title">VRoid Duo Showcase</span>
+          <span class="gallery-desc">Goth & pink streetwear</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="gallery-item" data-src="assets/gallery_1.png"
+        data-caption="Signature Oversized Dress - Featuring gothic print kanji.">
+        <img src="assets/gallery_1.png" alt="Gothic Kanji Outfit">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Oversized Kanji Fit</span>
+          <span class="gallery-desc">Gothic street style</span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="gallery-item" data-src="assets/gallery_2.png"
+        data-caption="Thigh-High & Accessories - Punk garters, sneakers, and leg straps details.">
+        <img src="assets/gallery_2.png" alt="Gothic Accessories">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Accessories Detail</span>
+          <span class="gallery-desc">Goth punk details</span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="gallery-item" data-src="assets/gallery_3.png"
+        data-caption="Silver-tipped Cat Ears - Dynamic hair rig showcase close-up.">
+        <img src="assets/gallery_3.png" alt="Cat Ears Detail">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Cat Ears & Hair</span>
+          <span class="gallery-desc">Close-up render</span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="gallery-item" data-src="assets/darxie_model.png"
+        data-caption="Velvet Shadow Pose - Signature gothic dress.">
+        <img src="assets/darxie_model.png" alt="Gothic VRoid Dress">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Velvet Shadow Pose</span>
+          <span class="gallery-desc">Signature gothic dress</span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="gallery-item" data-src="assets/gallery_1.png"
+        data-caption="Kanji Hood Silhouette - Cyber gothic style.">
+        <img src="assets/gallery_1.png" alt="Kanji Hood Silhouette">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Kanji Hood Silhouette</span>
+          <span class="gallery-desc">Cyber gothic style</span>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="gallery-item" data-src="assets/gallery_2.png"
+        data-caption="Punk Garter Detail - Leg harness and boots close-up.">
+        <img src="assets/gallery_2.png" alt="Leg Harness and Boots">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Punk Garter Detail</span>
+          <span class="gallery-desc">Leg harness & boots</span>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="gallery-item" data-src="assets/gallery_3.png"
+        data-caption="Catboy Tail Rigging - Dynamic VRoid mesh view.">
+        <img src="assets/gallery_3.png" alt="Catboy Tail Mesh">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Catboy Tail Rigging</span>
+          <span class="gallery-desc">Dynamic mesh view</span>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="gallery-item" data-src="assets/darxie_model.png"
+        data-caption="Neon Violet Contrast - Low light model showcase.">
+        <img src="assets/darxie_model.png" alt="Neon Model Contrast">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Neon Violet Contrast</span>
+          <span class="gallery-desc">Low light model view</span>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="gallery-item" data-src="assets/gallery_1.png"
+        data-caption="Streetwear Texture - Custom alpha-map print detail.">
+        <img src="assets/gallery_1.png" alt="Alpha-Map Streetwear">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Streetwear Texture</span>
+          <span class="gallery-desc">Alpha-map print detail</span>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="gallery-item" data-src="assets/gallery_2.png"
+        data-caption="Cyber Harness Rig - Custom metal buckle system.">
+        <img src="assets/gallery_2.png" alt="Cyber Harness Rig">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Cyber Harness Rig</span>
+          <span class="gallery-desc">Metal buckle system</span>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="gallery-item" data-src="assets/gallery_3.png"
+        data-caption="Silver Hair Shader - Custom VRoid hair texture map.">
+        <img src="assets/gallery_3.png" alt="Hair Texture Map">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Silver Hair Shader</span>
+          <span class="gallery-desc">VRoid hair texture map</span>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="gallery-item" data-src="assets/darxie_model.png"
+        data-caption="Dual Catboy Synergy - Duo model render.">
+        <img src="assets/darxie_model.png" alt="Dual Avatar Render">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Dual Catboy Synergy</span>
+          <span class="gallery-desc">Duo model render</span>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="gallery-item" data-src="assets/gallery_1.png"
+        data-caption="Gothic Kanji Close-up - Front print design texture.">
+        <img src="assets/gallery_1.png" alt="Gothic Print Texture">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Gothic Kanji Detail</span>
+          <span class="gallery-desc">Front print design</span>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="gallery-item" data-src="assets/gallery_2.png"
+        data-caption="Gothic Platform Boots - High-sole leather footwear.">
+        <img src="assets/gallery_2.png" alt="Goth Boots Detail">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Gothic Platform Boots</span>
+          <span class="gallery-desc">High-sole leather boots</span>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="gallery-item" data-src="assets/gallery_3.png"
+        data-caption="Silver Whisker Detail - Ears and accessories focus.">
+        <img src="assets/gallery_3.png" alt="Ear Accessories Close-up">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Silver Whisker Detail</span>
+          <span class="gallery-desc">Ears and accessories focus</span>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="gallery-item" data-src="assets/darxie_model.png"
+        data-caption="Shadow Catboy Silhouette - Dark room rendering style.">
+        <img src="assets/darxie_model.png" alt="Dark Room Render">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Shadow Silhouette</span>
+          <span class="gallery-desc">Dark room rendering style</span>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="gallery-item" data-src="assets/gallery_1.png"
+        data-caption="Oversized Fit Back View - Rear printing details.">
+        <img src="assets/gallery_1.png" alt="Oversized Hoodie Back View">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Oversized Fit Back View</span>
+          <span class="gallery-desc">Rear printing details</span>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="gallery-item" data-src="assets/gallery_2.png"
+        data-caption="Punk Straps Grid - Buckles and belt placement.">
+        <img src="assets/gallery_2.png" alt="Straps and Buckles Grid">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Punk Straps Grid</span>
+          <span class="gallery-desc">Buckles and belt placement</span>
+        </div>
+      </div>
+
+      <!-- 20 -->
+      <div class="gallery-item" data-src="assets/gallery_3.png"
+        data-caption="Catboy Hair Flow - Rear rig perspective.">
+        <img src="assets/gallery_3.png" alt="Catboy Hair Back view">
+        <div class="gallery-overlay">
+          <span class="gallery-title">Catboy Hair Flow</span>
+          <span class="gallery-desc">Rear rig perspective</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Gallery Modal -->
+  <div class="lightbox" id="gallery-lightbox">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+      <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24">
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged Artwork" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">Caption text goes here</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo-container">
+      <a href="index.html" class="logo">
+        <img src="Images/DarxiKawaii_Logo__2_-removebg-preview.png" alt="DarxiCon Logo" class="logo-img">
+      </a>
+      <div class="footer-text">&copy; DarxiKawaiiOfficial. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
